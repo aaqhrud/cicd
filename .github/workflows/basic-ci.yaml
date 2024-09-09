@@ -23,7 +23,7 @@ on:
         default: "latest"
 
 env:
-  REGISTRY: ghcr.io #github
+  REGISTRY: ghcr.io 
 
 jobs:
   test:
