@@ -91,7 +91,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.TOKEN }}
 
       - name: Build and push Docker image
         working-directory: ./${{ env.PROJECT_DIR }}
@@ -117,4 +117,4 @@ jobs:
   #         cd ${{ env.PROJECT_DIR }}
   #         echo "Deploying version ${{ github.event.inputs.version }} to ${{ github.event.inputs.environment }} environment"
   ##
-  
+
