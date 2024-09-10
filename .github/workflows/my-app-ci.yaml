@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies (dev)
         run: |
           cd ${{ env.PROJECT_DIR }}
-          poetry install -dev
+          poetry install
 
       - name: Run tests and collect coverage
         run: |
@@ -54,7 +54,7 @@ jobs:
       contents: read
       packages: write
     env:
-      PROJECT_DIR: my_app
+      PROJECT_DIR: my-app
 
     steps:
       - uses: actions/checkout@v2
